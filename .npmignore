@@ -1,0 +1,36 @@
+## Noir
+.editorconfig
+.eslintrc.cjs
+.gitignore
+.npmignore
+.prettierrc
+.swcrc
+src
+vite.config.js
+
+## Git ignore
+*.log
+lerna-debug.log*
+logs
+npm-debug.log*
+package-lock.json
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.local
+dist-ssr
+node_modules
+
+!.vscode/extensions.json
+.DS_Store
+.idea
+.vscode/*
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw?
+
+# directories
+example
