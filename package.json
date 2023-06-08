@@ -1,6 +1,6 @@
 {
-  "name": "@honeybee-js/npm-package",
-  "version": "0.0.1",
+  "name": "@honeybee-js/react-forms",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -11,19 +11,24 @@
       "require": "./dist/index.js"
     }
   },
-  "homepage": "https://github.com/...",
-  "repository": "...",
+  "homepage": "https://github.com/samline/react-forms",
+  "repository": "samline/react-forms",
   "license": "MIT",
   "keywords": [
-    "react",
-    "react-component"
+    "cleave.js",
+    "cleavejs",
+    "forms",
+    "hook",
+    "hooks",
+    "react-component",
+    "react"
   ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "npx swc ./src/index.jsx -o ./dist/index.js"
+    "prepare": "npx swc ./src -d dist"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -46,5 +51,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-hook-form": "^7.44.3"
+  }
 }
