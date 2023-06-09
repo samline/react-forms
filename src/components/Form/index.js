@@ -1,8 +1,5 @@
-/* Default */
-import React from 'react'
-
 /* Packages */
-import { FormProvider, useForm } from 'react-hook-form'
+import { FormProvider } from 'react-hook-form'
 
 /**
  * Form
