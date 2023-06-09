@@ -1,9 +1,8 @@
 /* Default */
-import React from 'react'
+import { Fragment, useId } from 'react'
 
 /* Packages */
 import { useFormContext } from 'react-hook-form'
-import { useId } from 'react-id-generator'
 
 /**
  * Textarea
@@ -31,7 +30,7 @@ export const Textarea = ({
   const { ref, onChange, onBlur, ...rest } = register(name, { ...validations })
 
   return (
-    <React.Fragment>
+    <Fragment>
       {name && (
         <textarea
           id={id ? `${name}:${id}` : `${name}:${useId()}`}
@@ -54,6 +53,6 @@ export const Textarea = ({
           }}
         ></textarea>
       )}
-    </React.Fragment>
+    </Fragment>
   )
 }

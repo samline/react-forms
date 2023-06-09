@@ -12,6 +12,7 @@ Classic html input but controlled by [react-hook-form](https://www.react-hook-fo
  * @param {string} id
  * @param {string} name (required)
  * @param {string} value
+ * @param {string} placeholder
  * @param {reference} innerRef - you can still assign to ref
  * @param {object} validations - docs: https://www.react-hook-form.com/get-started#Applyvalidation
  * @param {...reactHookFormProps} props - docs: https://www.react-hook-form.com
@@ -48,7 +49,13 @@ import { Input } from '@honeybee-js/react-forms'
 
 ```jsx
 /* Example props  */
-<Input name='email' type='email' class='...' onFocus={(e) => console.log(e)} />
+<Input
+  name='email'
+  type='email'
+  placeholder='Cool!'
+  class='...'
+  onFocus={(e) => console.log(e)}
+/>
 ```
 
 ```jsx
@@ -62,13 +69,6 @@ import { Input } from '@honeybee-js/react-forms'
   type='tel'
   validations={{ required: true, minLength: 7, maxLength: 10 }}
 />
-```
-
-### You can create your own Input component using react-forms if you want more customization.
-
-```js
-/* Example:  */
-...
 ```
 
 ## License
