@@ -9,10 +9,15 @@ import { useFormContext } from 'react-hook-form'
  * @param {string} id
  * @param {string} name (required)
  * @param {string} value
+ * @param {string} placeholder
  * @param {reference} innerRef - you can still assign to ref
- * @param {object} validations (Docs: https://react-hook-form.com/get-started#Applyvalidation)
+ * @param {object} validations - docs: https://www.react-hook-form.com/get-started#Applyvalidation
+ * @param {...reactHookFormProps} props - docs: https://www.react-hook-form.com
  * @param {...any} props
- * @returns
+ *
+ * @returns component
+ *
+ * @react-hook-form - docs https://www.react-hook-form.com
  */
 
 export const Select = ({

@@ -1,19 +1,19 @@
 /* Default */
-import React from 'react'
+import { Fragment, useId } from 'react'
 
 /* Packages */
 import { useFormContext } from 'react-hook-form'
-import { useId } from 'react-id-generator'
 
 /**
  * Label
  * @param {children} children
- * @param {string} id
- * @param {string} name (required)
+ * @param {string} id - the id will be required to link to a form component, they must share a unique id
+ * @param {string} name (required) - name is required to link to form component
  * @param {string} content
  * @param {reference} innerRef - you can still assign to ref
  * @param {...any} props
- * @returns
+ *
+ * @returns component
  */
 
 export const Label = ({ children, id, name, content, innerRef, ...props }) => {
@@ -22,7 +22,7 @@ export const Label = ({ children, id, name, content, innerRef, ...props }) => {
   } = useFormContext()
 
   return (
-    <React.Fragment>
+    <Fragment>
       {name && (
         <label
           ref={(e) => (innerRef ? (innerRef.current = e) : null)}
@@ -33,6 +33,6 @@ export const Label = ({ children, id, name, content, innerRef, ...props }) => {
           {children ?? content}
         </label>
       )}
-    </React.Fragment>
+    </Fragment>
   )
 }
