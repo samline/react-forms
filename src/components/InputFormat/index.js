@@ -1,9 +1,8 @@
 /* Default */
-import React from 'react'
+import { Fragment, useId } from 'react'
 
 /* Packages */
 import { useFormContext, Controller } from 'react-hook-form'
-import { useId } from 'react-id-generator'
 import Cleave from 'cleave.js/react'
 
 /**
@@ -11,12 +10,18 @@ import Cleave from 'cleave.js/react'
  * @param {string} id
  * @param {string} name (required)
  * @param {string} value
+ * @param {string} placeholder
  * @param {reference} innerRef - you can still assign to ref
- * @param {object} validations (Docs: https://react-hook-form.com/get-started#Applyvalidation)
- * @param {object} format - (e.g. { creditCard: true, ... }) - (Docs: https://nosir.github.io/cleave.js/)
+ * @param {object} validations - docs: https://www.react-hook-form.com/get-started#Applyvalidation
+ * @param {object} format - docs: https://nosir.github.io/cleave.js
  * @param {boolean} rawValue - set rawValue as value instead formatted value - default: false
+ * @param {...reactHookFormProps} props - docs: https://www.react-hook-form.com
+ * @param {...cleavejsProps} props - docs: https://nosir.github.io/cleave.js
  * @param {...any} props
- * @returns (formatted value or raw value)
+ *
+ * @returns component (formatted value or raw value)
+ *
+ * @react-hook-form - docs https://www.react-hook-form.com
  */
 
 export const InputFormat = ({
@@ -39,7 +44,7 @@ export const InputFormat = ({
   /* TODO: test input format, defaultValues and reset */
 
   return (
-    <React.Fragment>
+    <Fragment>
       {name && (
         <Controller
           control={control}
@@ -78,6 +83,6 @@ export const InputFormat = ({
           }}
         />
       )}
-    </React.Fragment>
+    </Fragment>
   )
 }

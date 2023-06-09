@@ -19,7 +19,7 @@ Label linked to a form element, it acquires the error status if the component do
 ```
 
 ```jsx
-import { Input } from '@honeybee-js/react-forms'
+import { Label } from '@honeybee-js/react-forms'
 ```
 
 ```jsx

@@ -1,6 +1,6 @@
 {
   "name": "@honeybee-js/react-forms",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -21,7 +21,8 @@
     "hook",
     "hooks",
     "react-component",
-    "react"
+    "react",
+    "react-hook-form"
   ],
   "scripts": {
     "dev": "vite",
@@ -53,6 +54,7 @@
     "dist"
   ],
   "dependencies": {
+    "cleave.js": "^1.6.0",
     "react-hook-form": "^7.44.3"
   }
 }
