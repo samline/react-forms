@@ -65,6 +65,26 @@ export const CustomForm = () => {
 }
 ```
 
+```jsx
+/* Example defaultValues */
+export const CustomForm = () => {
+  const methods = useForm({ defaultValues: { lang: 'es' } })
+  const handleSubmit = ({ ...props }) => {
+    console.log('Auto submitted')
+  }
+
+  return (
+    <Form methods={methods} onSubmit={handleSubmit} autosubmit>
+      <Select name="lang">
+        <option value="en">En</option>
+        <option value="es">Es</option>
+        <option value="fr">Fr</option>
+      </Select>
+    </Form>
+  )
+}
+```
+
 ## License
 
 MIT © [Samline](https://github.com/samline)
