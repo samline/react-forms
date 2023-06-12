@@ -27,38 +27,42 @@ Classic html form but controlled by [react-hook-form](https://www.react-hook-for
 ```
 
 ```jsx
-import { Form } from '@honeybee-js/react-forms'
+import { Form, useForm } from '@honeybee-js/react-forms'
 ```
 
 ```jsx
-const methods = useForm()
-const handleSubmit = ({ ...props }) => {
-  console.log('Form:', props)
+export const CustomForm = () => {
+  const methods = useForm()
+  const handleSubmit = ({ ...props }) => {
+    console.log('Form:', props)
+  }
+
+  return (
+    <Form methods={methods} onSubmit={handleSubmit} ...reactHookFormProps ...props>
+      ...
+    </Form>
+  )
 }
-
-...
-
-<Form methods={methods} onSubmit={handleSubmit} ...reactHookFormProps ...props>
-  ...
-</Form>
 ```
 
 ```jsx
 /* Example */
-const methods = useForm()
-const handleSubmit = ({ ...props }) => {
-  console.log('Auto submitted')
- }
+export const CustomForm = () => {
+  const methods = useForm()
+  const handleSubmit = ({ ...props }) => {
+    console.log('Auto submitted')
+  }
 
-...
-
-<Form methods={methods} onSubmit={handleSubmit} autosubmit>
-  <Select name="lang">
-    <option value="en">En</option>
-    <option value="es">Es</option>
-    <option value="fr">Fr</option>
-  </Select>
-</Form>
+  return (
+    <Form methods={methods} onSubmit={handleSubmit} autosubmit>
+      <Select name="lang">
+        <option value="en">En</option>
+        <option value="es">Es</option>
+        <option value="fr">Fr</option>
+      </Select>
+    </Form>
+  )
+}
 ```
 
 ## License
