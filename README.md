@@ -1,6 +1,6 @@
 # react-forms
 
-Implement forms in your React applications using react-hook-form and cleave.js together, easy to use in most of your projects.
+Implement forms in your React applications using [react-hook-form](https://www.react-hook-form.com) and [cleave.js](https://nosir.github.io/cleave.js) together, easy to use in most of your projects.
 
 > If you need more complex implementations remember to visit both libraries in their respective documentation.
 
