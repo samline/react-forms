@@ -23,6 +23,7 @@ yarn add @honeybee-js/react-forms
 
 | Component   | Docs                                                                                     | Status |
 | ----------- | ---------------------------------------------------------------------------------------- | ------ |
+| API         | [README.md](https://github.com/samline/react-forms/tree/main/docs/API/README.md)         | Stable |
 | Form        | [README.md](https://github.com/samline/react-forms/tree/main/docs/Form/README.md)        | Stable |
 | Label       | [README.md](https://github.com/samline/react-forms/tree/main/docs/Label/README.md)       | Stable |
 | Input       | [README.md](https://github.com/samline/react-forms/tree/main/docs/Input/README.md)       | Stable |
