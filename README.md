@@ -31,6 +31,7 @@ yarn add @honeybee-js/react-forms
 | Select      | [README.md](https://github.com/samline/react-forms/tree/main/docs/Select/README.md)      | Stable |
 | Textarea    | [README.md](https://github.com/samline/react-forms/tree/main/docs/Textarea/README.md)    | Stable |
 | Error       | [README.md](https://github.com/samline/react-forms/tree/main/docs/Error/README.md)       | Stable |
+| GlobalError | [README.md](https://github.com/samline/react-forms/tree/main/docs/GlobalError/README.md) | Stable |
 
 ## License
 
