@@ -11,13 +11,13 @@ import {
 } from 'react-hook-form'
 
 /* ./ */
-import { Error, GlobalError } from './components/Error'
-import { Form } from './components/Form'
-import { Input } from './components/Input'
-import { InputFormat } from './components/InputFormat'
-import { Label } from './components/Label'
-import { Select } from './components/Select'
-import { Textarea } from './components/Textarea'
+import { Error, GlobalError } from './components/Error/index.js'
+import { Form } from './components/Form/index.js'
+import { Input } from './components/Input/index.js'
+import { InputFormat } from './components/InputFormat/index.js'
+import { Label } from './components/Label/index.js'
+import { Select } from './components/Select/index.js'
+import { Textarea } from './components/Textarea/index.js'
 
 export {
   Controller,
