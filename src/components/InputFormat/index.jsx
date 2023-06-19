@@ -3,7 +3,7 @@ import { Fragment, useId } from 'react'
 
 /* Packages */
 import { useFormContext, Controller } from 'react-hook-form'
-import Cleave from 'cleave.js/react'
+import Cleave from 'cleave.js/react.js'
 
 /**
  * InputFormat
